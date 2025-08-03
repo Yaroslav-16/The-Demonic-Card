@@ -19,7 +19,7 @@ public class Hand : MonoBehaviour
         spawnCardPos = GameObject.Find("SpawnCardPos").GetComponent<Transform>();
     }
 
-    public void DrawCard()
+    public void SetPosCardsInHand()
     {
         float distanceBtwCards = 0.2f;
         float sizeOfCard = 1.2f;

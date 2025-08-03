@@ -50,5 +50,9 @@ public class Deck : MonoBehaviour
         var card = Instantiate(data.prefab, spawnCardPos);
         card.GetComponent<CardView>().Init(data);
         Hand.instance.cardsInHand.Add(card);
+        //накидать событий а то с вызовыми траблы
+        //сделать возможным вытягивание карты после того как предыдущая вытянутая карта переместилась в руку
+        //и на руку можно забить с этого момента
+        //заняться спелами на карты и ии для бота и геймдизайном
     }
 }
